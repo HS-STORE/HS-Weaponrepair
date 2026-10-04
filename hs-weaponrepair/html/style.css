@@ -1,0 +1,159 @@
+:root {
+    --primary: #9d4edd;
+    --primary-dark: #7b2cbf;
+    --primary-glow: rgba(157, 78, 221, 0.4);
+    --bg-dark: #0f0c1b;
+    --card-bg: #18132a;
+    --text-light: #f1f1f1;
+    --text-muted: #a099b8;
+    --border-color: rgba(157, 78, 221, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+}
+
+body {
+    background: transparent;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.repair-card {
+    width: 420px;
+    background: var(--bg-dark);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    box-shadow: 0 0 35px var(--primary-glow);
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 22px;
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-icon {
+    font-size: 20px;
+    color: var(--primary);
+}
+
+.brand h2 {
+    color: var(--text-light);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.brand h2 span {
+    color: var(--primary);
+}
+
+#close-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#close-btn:hover {
+    color: #ff4d4d;
+}
+
+.content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.weapon-img-box {
+    width: 140px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#weapon-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px var(--primary-glow));
+}
+
+.content h3 {
+    color: var(--text-light);
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.content p {
+    color: var(--text-muted);
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.price-tag {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.price-tag span {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.price-tag h2 {
+    color: #2ecc71;
+    font-size: 20px;
+}
+
+#repair-btn {
+    width: 100%;
+    background: var(--primary);
+    border: none;
+    color: #fff;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 0 15px var(--primary-glow);
+    transition: 0.2s;
+}
+
+#repair-btn:hover {
+    background: var(--primary-dark);
+}

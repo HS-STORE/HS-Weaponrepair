@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HS-Store  - Weapon Repair</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="repair-container" class="hidden">
+        <div class="repair-card">
+            <div class="header">
+                <div class="brand">
+                    <i class="fa-solid fa-wrench brand-icon"></i>
+                    <h2>HS-Store <span>WEAPON REPAIR</span></h2>
+                </div>
+                <button id="close-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div class="content">
+                <div class="weapon-img-box">
+                    <img id="weapon-img" src="" alt="Weapon Image">
+                </div>
+                <h3>REPAIR YOUR WEAPON</h3>
+                <p>Fix durability and restore weapon performance back to 100%.</p>
+                
+                <div class="price-tag">
+                    <span>Cost:</span>
+                    <h2 id="repair-cost">$5,000</h2>
+                </div>
+
+                <button id="repair-btn">REPAIR NOW</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
